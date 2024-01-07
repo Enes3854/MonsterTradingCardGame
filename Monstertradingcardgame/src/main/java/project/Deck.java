@@ -7,7 +7,7 @@ import java.util.List;
 public class Deck {
 // List of cards that the deck holds
     private List<Card> cards = new ArrayList<>();
-    // The constructor of the 'Deck' class checks if the deck has more than 4 cards, it does not add more cards due to game rules.
+    // The constructor of the 'Deck' class checks if the deck has more than 4 cards, it does not add more cards due to game rules
     public Deck (List<Card> deck) {
         if (deck != null) {
             for (int i = 0; deck.size() > i && i < 4; i++) {

@@ -37,7 +37,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -68,7 +68,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Megaport/Documents/FH/SWEN1/Monstertradingcardgame",
+    "last_opened_file_path": "C:/Users/Megaport/Documents/FH/SWEN1",
+    "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
@@ -240,7 +241,7 @@
       <workItem from="1704580606853" duration="1421000" />
       <workItem from="1704659019847" duration="766000" />
       <workItem from="1704659795812" duration="876000" />
-      <workItem from="1704660684202" duration="53000" />
+      <workItem from="1704660684202" duration="404000" />
     </task>
     <task id="LOCAL-00001" summary="Monstertype created">
       <created>1640203847307</created>
@@ -256,7 +257,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642448764150</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Finished Project">
+      <created>1704660846353</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1704660846353</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -267,7 +275,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -280,7 +300,8 @@
     <MESSAGE value="Method implementations" />
     <MESSAGE value="Monstertype created" />
     <MESSAGE value="Final version" />
-    <option name="LAST_COMMIT_MESSAGE" value="Final version" />
+    <MESSAGE value="Finished Project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished Project" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
