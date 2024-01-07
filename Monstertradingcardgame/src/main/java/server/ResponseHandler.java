@@ -157,7 +157,7 @@ public class ResponseHandler {
                 ps.close();
                 conn.close();
                 response.setStatus("200 OK");
-                response.setPayload("Succesfuly deleted");
+                response.setPayload("Successfully deleted");
             } catch (SQLException e) {
                 e.printStackTrace();
                 response.setStatus("409 Conflict");
@@ -226,7 +226,7 @@ public class ResponseHandler {
                                 if ( jsonNode.has("Name") && jsonNode.has("Bio") && jsonNode.has("Image")){
                                     if (user.setUserInfo(jsonNode.get("Name").asText(),jsonNode.get("Bio").asText(),jsonNode.get("Image").asText())){
                                         response.setStatus("200 OK");
-                                        response.setPayload("User info succesfuly updated.");
+                                        response.setPayload("User info successfully updated.");
                                     } else {
                                         response.setStatus("404 Not Found");
                                         response.setPayload("User not found.");
@@ -262,7 +262,7 @@ public class ResponseHandler {
                     if ( jsonNode.has("Username") && jsonNode.has("Password")){
                         if (manager.loginUser(jsonNode.get("Username").asText(),jsonNode.get("Password").asText())) {
                             response.setStatus("200 OK");
-                            response.setPayload("User succesfuly logged in.");
+                            response.setPayload("User successfully logged in.");
                         }else{
                             response.setStatus("401 Unauthorized");
                             response.setPayload("Error while logging user in.");
@@ -278,7 +278,7 @@ public class ResponseHandler {
                     if ( jsonNode.has("Username") && jsonNode.has("Password")){
                         if (manager.logoutUser(jsonNode.get("Username").asText(),jsonNode.get("Password").asText())) {
                             response.setStatus("200 OK");
-                            response.setPayload("User succesfuly logged out.");
+                            response.setPayload("User successfully logged out.");
                         }
                     }
                 } catch (IOException e) {
@@ -339,7 +339,7 @@ public class ResponseHandler {
         if (request.getHttp_verb().equals("POST")) {
             if (manager.acquirePackage2User(user)){
                 response.setStatus("200 OK");
-                response.setPayload("User acquired package sucessfuly.");
+                response.setPayload("User acquired package successfully.");
             } else {
                 response.setStatus("409 Conflict");
                 response.setPayload("Error while acquiring package.");
@@ -434,7 +434,7 @@ public class ResponseHandler {
                         if (jsonNode.has("Card2Trade")){
                             if (manager.tradeCards(user,parts[2],jsonNode.get("Card2Trade").asText())){
                                 response.setStatus("200 OK");
-                                response.setPayload("Cards traded succesfuly.");
+                                response.setPayload("Cards traded successfully.");
                             }
                         }
                     } catch (IOException e) {
@@ -446,7 +446,7 @@ public class ResponseHandler {
                         if (jsonNode.has("Id") && jsonNode.has("CardToTrade") && jsonNode.has("Type") && jsonNode.has("MinimumDamage")){
                             if (manager.card2market(user,jsonNode.get("Id").asText(),jsonNode.get("CardToTrade").asText(),(float)jsonNode.get("MinimumDamage").asDouble(),jsonNode.get("Type").asText())){
                                 response.setStatus("201 Created");
-                                response.setPayload("Cards traded succesfuly.");
+                                response.setPayload("Cards traded successfully.");
                             }
                         }
                     } catch (IOException e) {
