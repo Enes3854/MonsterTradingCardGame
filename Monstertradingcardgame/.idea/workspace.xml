@@ -23,9 +23,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="54d1a388-9738-4ba3-a67d-e971a2f90b3e" name="Changes" comment="Finished Project">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/project/Verb.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/ResponseHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/ResponseHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MasterTradingCardGame.iml" beforeDir="false" afterPath="$PROJECT_DIR$/MonsterTradingCardGame.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +100,7 @@
   <component name="RunManager" selected="Application.TcpListener">
     <configuration name="TcpListener" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="server.TcpListener" />
-      <module name="MasterTradingCardGame" />
+      <module name="MonsterTradingCardGame" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="server.*" />
@@ -114,7 +112,7 @@
       </method>
     </configuration>
     <configuration name="CombatTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="MasterTradingCardGame" />
+      <module name="MonsterTradingCardGame" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="testing.*" />
@@ -130,7 +128,7 @@
       </method>
     </configuration>
     <configuration name="DeckTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="MasterTradingCardGame" />
+      <module name="MonsterTradingCardGame" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="testing.*" />
@@ -146,7 +144,7 @@
       </method>
     </configuration>
     <configuration name="ResponseHandlerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="MasterTradingCardGame" />
+      <module name="MonsterTradingCardGame" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="testing.*" />
@@ -162,7 +160,7 @@
       </method>
     </configuration>
     <configuration name="UnwrapperTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="MasterTradingCardGame" />
+      <module name="MonsterTradingCardGame" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="testing.*" />
@@ -245,7 +243,7 @@
       <workItem from="1704659795812" duration="876000" />
       <workItem from="1704660684202" duration="792000" />
       <workItem from="1704661488923" duration="49000" />
-      <workItem from="1704661549115" duration="835000" />
+      <workItem from="1704661549115" duration="1162000" />
     </task>
     <task id="LOCAL-00001" summary="Monstertype created">
       <created>1640203847307</created>
@@ -275,7 +273,14 @@
       <option name="project" value="LOCAL" />
       <updated>1704661174646</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Finished Project">
+      <created>1704662445131</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1704662445131</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -7,11 +7,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="MasterTradingCardGame" />
+        <module name="MonsterTradingCardGame" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="MasterTradingCardGame" target="18" />
+      <module name="MonsterTradingCardGame" target="18" />
     </bytecodeTargetLevel>
   </component>
 </project>
