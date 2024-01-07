@@ -1,0 +1,62 @@
+set search_path to public;
+DROP TABLE IF EXISTS packages CASCADE;
+DROP TABLE IF EXISTS Stack CASCADE;
+DROP TABLE IF EXISTS cards CASCADE;
+DROP TABLE IF EXISTS users CASCADE;
+DROP TABLE IF EXISTS Marketplace CASCADE;
+DROP TYPE IF EXISTS ELEMENTTYPE CASCADE;
+DROP TYPE IF EXISTS CARDTYPE CASCADE;
+
+CREATE Table users(
+    username varchar(50) PRIMARY KEY ,
+    password varchar(50) NOT NULL,
+    elo int NOT NULL DEFAULT 100,
+    coins int NOT NULL DEFAULT 20,
+    isLogged boolean NOT NULL DEFAULT false,
+	name varchar(50),
+	bio TEXT,
+	image TEXT, 
+	games int, 
+	wins int,
+	token varchar(250),	
+	admin BOOLEAN
+);
+
+CREATE TYPE ELEMENTTYPE AS ENUM ('Water', 'Fire', 'Normal');
+
+CREATE TYPE CARDTYPE AS ENUM ('Goblin', 'Wizzard', 'Dragon','Spell', 'Knights', 'Orks', 'Kraken', 'Elf');
+
+
+CREATE Table cards(
+    cardID varchar(250) PRIMARY KEY,
+    name varchar(50),
+    damage int NOT NULL,
+    Elementtype ELEMENTTYPE,
+    Cardtype CARDTYPE,
+	collection VARCHAR(50),
+	owner varchar(50)
+);
+
+CREATE TABLE Stack(
+    id varchar(250) PRIMARY KEY,
+    username varchar(50) REFERENCES users(username) NOT NULL,
+    cardID varchar(250) REFERENCES cards(cardid) NOT NULL
+);
+
+CREATE TABLE packages(
+    packageID SERIAL PRIMARY KEY,
+    cardID_1 varchar(250) REFERENCES cards(cardid) NOT NULL,
+    cardID_2 VARCHAR(250) REFERENCES cards(cardid) NOT NULL,
+    cardID_3 VARCHAR(250) REFERENCES cards(cardid) NOT NULL,
+    cardID_4 VARCHAR(250) REFERENCES cards(cardid) NOT NULL,
+    cardID_5 VARCHAR(250) REFERENCES cards(cardid) NOT NULL
+);
+
+CREATE TABLE Marketplace(
+    tradeID varchar(250) PRIMARY KEY,
+    cardid varchar(250) REFERENCES cards(cardid) NOT NULL,
+    mindamage INT NOT NULL,
+    type varchar(50)
+);
+
+select * from users;
